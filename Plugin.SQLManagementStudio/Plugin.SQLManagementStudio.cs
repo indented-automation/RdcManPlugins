@@ -117,7 +117,8 @@ namespace Plugin.SQLManagementStudio
 
         public void OpenManagementStudio()
         {
-            try {
+            try
+            {
                 string command = String.Format(@"""{0}"" -S {1} -E",
                     this.GetSsmsPath(),
                     this.server.ServerName
@@ -141,7 +142,9 @@ namespace Plugin.SQLManagementStudio
                         );
                     }
                 }
-            } catch {
+            }
+            catch
+            {
                 throw;
             }
         }
